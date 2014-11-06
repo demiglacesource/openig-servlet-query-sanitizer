@@ -52,9 +52,9 @@ public class SanitizeQueryStringFilter implements Filter {
     }
 
     @Override
-    public void doFilter(final ServletRequest request, final ServletResponse response, final FilterChain chain)
-            throws IOException, ServletException {
-        chain.doFilter(new SanitizedQueryStringHttpServletRequest((HttpServletRequest) request), response);
+    public void doFilter(final ServletRequest request, final ServletResponse response, final FilterChain chain) throws IOException,
+                                                                                                               ServletException {
+        chain.doFilter(new SanitizedQueryStringHttpServletRequest((HttpServletRequest)request), response);
     }
 
     @Override
@@ -72,9 +72,9 @@ public class SanitizeQueryStringFilter implements Filter {
         public String getQueryString() {
             return sanitizeQuery(super.getQueryString());
         }
-        
+
         private static String sanitizeQuery(final String rawQuery) {
-            
+
             // Protect against NPE
             if (rawQuery == null) {
                 return null;
