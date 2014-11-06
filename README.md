@@ -9,14 +9,14 @@ into properly URL encoded `%7C`.
 This has to be declared inside of the `WEB-INF/web.xml` descriptor:
 
 ```xml
-   <filter>
-     <filter-name>sanitizer</filter-name>
-     <filter-class>org.forgerock.openig.ext.servlet.SanitizeQueryStringFilter</filter-class>
-   </filter>
-   <filter-mapping>
-     <filter-name>sanitizer</filter-name>
-     <servlet-name>openig-servlet</servlet-name>
-   </filter-mapping>
+<filter>
+  <filter-name>sanitizer</filter-name>
+  <filter-class>org.forgerock.openig.ext.servlet.SanitizeQueryStringFilter</filter-class>
+</filter>
+<filter-mapping>
+  <filter-name>sanitizer</filter-name>
+  <servlet-name>openig-servlet</servlet-name>
+</filter-mapping>
 ```
 
 Do not forget to also add the jar of this module inside your web container
