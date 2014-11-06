@@ -1,1 +1,1 @@
-{"builders":{"default":"maven"},"description":"Sanitize ill-formed query parameters.","type":"maven","attributes":{}}
+{"builders":{"default":"maven"},"description":"Sanitize the query string value in case of ill-formed values","type":"maven","attributes":{"language":["java"]}}
