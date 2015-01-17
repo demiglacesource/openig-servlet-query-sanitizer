@@ -14,6 +14,10 @@
  * Copyright 2014 ForgeRock AS.
  */
 
+/*
+ * Portions Copyrighted 2015 demiglacesource
+ */
+
 package org.forgerock.openig.ext.servlet;
 
 import java.io.IOException;
