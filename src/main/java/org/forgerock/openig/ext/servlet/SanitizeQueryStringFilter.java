@@ -86,6 +86,8 @@ public class SanitizeQueryStringFilter implements Filter {
                 char c = rawQuery.charAt(i);
                 if (c == '|') {
                     sb.append("%7C");
+                } else if (c == '\\') {
+                    sb.append("%5C");
                 } else {
                     sb.append(c);
                 }
