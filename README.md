@@ -5,6 +5,7 @@ Sanitize ill-formed query parameters.
 
 Right now, it only changes `|` (pipe) chars inside raw query string
 into properly URL encoded `%7C`.
+and `\` (back slash) chars (`%5C`).
 
 This has to be declared inside of the `WEB-INF/web.xml` descriptor:
 
